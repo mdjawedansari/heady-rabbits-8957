@@ -215,6 +215,19 @@
             visibility: visible;
             color: green;
         }
+        #bottom {
+            width: 100%;
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+            background-color: whitesmoke;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        #bottom img {
+            width: 100px;
+        }
     </style>
 </head>
 <body>
@@ -236,41 +249,16 @@
                     <h2>CLiQ Care</h2>
                 </a>
                 <a href="track.html">
-                    <h2>Track Orders</h2>
+                    <h2>About Us</h2>
+                </a>
+                <a href="cart.html">
+                    <h2>Cart</h2>
                 </a>
                 <a href="login.html">
                     <h2>Login/Signup</h2>
                 </a>
             </div>
-            <div id="div2-2">
-                <select id="top">
-                    <option value="">Categories</option>
-                    <option value="Women's Fashion">Women's Fashion</option>
-                    <option value="Men's Fashion">Men's Fashion</option>
-                    <option value="Kid's Fashion">Kid's Fashion</option>
-                    <option value="Home & Kitchen">Home & Kitchen</option>
-                    <option value="Beauty">Beauty</option>
-                    <option value="Gadgets">Gadgets</option>
-                    <option value="Jewellery">Jewellery</option>
-                    <option value="Accessories">Accessories</option>
-                </select>
-                <select id="top1">
-                    <option value="">Brands</option>
-                    <option value="Women's Wear">Women's Fashion</option>
-                    <option value="Men's Wear">Men's Fashion</option>
-                    <option value="Footwear">Kid's Fashion</option>
-                    <option value="Jewellery">Home & Kitchen</option>
-                    <option value="Watches & Accessories">Beauty</option>
-                    <option value="Kids">Gadgets</option>
-                </select>
-                <input type="text" placeholder="Search for Products">
-                <a href="">
-                    <img src="https://icon-library.com/images/wishlist-icon/wishlist-icon-19.jpg" alt="Error">
-                </a>
-                <a href="">
-                    <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/fashion-bag-1629522-1382993.png" alt="Error">
-                </a>
-            </div>
+            
         </div>
     </div>
     <form id="create-account-form" id="create-account-form" action="" method="get">
@@ -307,6 +295,11 @@
         </div>
         <button onclick="validate()" type="submit" class="btn" >Submit</button>
     </form>
+    <div id="bottom">
+        <h3>Download App</h3>
+        <a href=""><img src="https://e7.pngegg.com/pngimages/756/724/png-clipart-iphone-android-apple-apple-icon-logo-computer-wallpaper.png" alt="Error"></a>
+        <h2> DEAL CLIQ | All rights reserved</h2>
+    </div>
 </body>
 <script src="./Scripts/login.js"></script>
 </html>
