@@ -48,102 +48,6 @@
             color: white;
             text-decoration: none;
         }
-        #top {
-            color: white;
-            background-color: #263238;
-            border: 0px;
-            font-size: large;
-            width: 170px;
-            margin-right: 20px;
-        }
-        #top1 {
-            color: white;
-            background-color: #263238;
-            border: 0px;
-            font-size: large;
-            width: 170px;
-            margin-right: 20px;
-        }
-        #top :nth-child(1) {
-            background-color: white;
-            color: black;
-        }
-        #top :nth-child(2) {
-            background-color: white;
-            color: black;
-        }
-        #top :nth-child(3) {
-            background-color: white;
-            color: black;
-        }
-        #top :nth-child(4) {
-            background-color: white;
-            color: black;
-        }
-        #top :nth-child(5) {
-            background-color: white;
-            color: black;
-        }
-        #top :nth-child(6) {
-            background-color: white;
-            color: black;
-        }
-        #top :nth-child(7) {
-            background-color: white;
-            color: black;
-        }
-        #top :nth-child(8) {
-            background-color: white;
-            color: black;
-        }
-        #top :nth-child(9) {
-            background-color: white;
-            color: black;
-        }
-        #top1 :nth-child(1) {
-            background-color: white;
-            color: black;
-        }
-        #top1 :nth-child(2) {
-            background-color: white;
-            color: black;
-        }
-        #top1 :nth-child(3) {
-            background-color: white;
-            color: black;
-        }
-        #top1 :nth-child(4) {
-            background-color: white;
-            color: black;
-        }
-        #top1 :nth-child(5) {
-            background-color: white;
-            color: black;
-        }
-        #top1 :nth-child(6) {
-            background-color: white;
-            color: black;
-        }
-        #top1 :nth-child(7) {
-            background-color: white;
-            color: black;
-        }
-        #div2-2 input {
-            height: 35px;
-            border-radius: 5px;
-            background-color: grey;
-            border: 0px;
-            width: 50%;
-            margin-right: 15px;
-        }
-        #div2-2 ::placeholder {
-            color: lightgray;
-            padding-left: 20px;
-        }
-        #div2-2 img {
-            width: 30px;
-            margin-right: 15px;
-        }
         * {
             padding: 0px;
             margin: 0px;
@@ -175,7 +79,7 @@
             width: 100%;
             padding: 10px;
         }
-        .btn {
+        #btn {
             width: 92%;
             margin-bottom: 10px;
             margin-left: 15px;
@@ -228,6 +132,40 @@
         #bottom img {
             width: 100px;
         }
+        @media screen and (min-width:768px) and (max-width:1023px){
+            
+            #navbar {
+                width: 750px;
+                height: 230px;
+                flex-direction: column;
+                text-align: center;
+            }
+            #cart-container {
+              grid-template-columns:20% 20% 20%;
+              width: 700px;
+            }
+        }
+
+        @media screen and (max-width:767px){
+            
+            #navbar {
+                width: 880px;
+                height: 230px;
+                flex-direction: column;
+                text-align: center;
+            }
+            #bottom {
+              width: 880px;
+                height: 230px;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 590px;
+            }
+            #cart-container {
+              grid-template-columns:20% 20%;
+              width: 700px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -239,11 +177,8 @@
         </div>
         <div id="div2">
             <div id="div2-1">
-                <a href="cash.html">
-                    <h2>CLiQ Cash</h2>
-                </a>
-                <a href="gift.html">
-                    <h2>Gift Card</h2>
+                <a href="index.html">
+                    <h2>Home</h2>
                 </a>
                 <a href="care.html">
                     <h2>CLiQ Care</h2>
@@ -265,35 +200,35 @@
         <div class="title">
             <h2>Create Account</h2>
         </div>
-        <div class="input-group error success">
+        <div class="input-group">
             <label for="username">Name</label>
             <input type="text" id="username" placeholder="Name" name="username">
             <i class="fa-solid fa-circle-check"></i>
             <i class="fa-solid fa-circle-exclamation"></i>
             <p>Error Message</p>
         </div>
-        <div class="input-group error success">
+        <div class="input-group">
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Email" name="email">
             <i class="fa-solid fa-circle-check"></i>
             <i class="fa-solid fa-circle-exclamation"></i>
             <p>Error Message</p>
         </div>
-        <div class="input-group error success">
+        <div class="input-group">
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Password" name="password">
             <i class="fa-solid fa-circle-check"></i>
             <i class="fa-solid fa-circle-exclamation"></i>
             <p>Error Message</p>
         </div>
-        <div class="input-group error success">
+        <div class="input-group">
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" placeholder="Password" name="confirm-password">
+            <input type="password" id="confirmPassword" placeholder="Password" name="confirmPassword">
             <i class="fa-solid fa-circle-check"></i>
             <i class="fa-solid fa-circle-exclamation"></i>
             <p>Error Message</p>
         </div>
-        <button onclick="validate()" type="submit" class="btn" >Submit</button>
+        <button onclick="LoggedIn()" type="button" id="btn" >Submit</button>
     </form>
     <div id="bottom">
         <h3>Download App</h3>
