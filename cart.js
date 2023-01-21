@@ -1,5 +1,5 @@
- // Write all necessery JS here
- let Cart = JSON.parse(localStorage.getItem("cart"))||[];
+
+let Cart = JSON.parse(localStorage.getItem("cart"))||[];
  let Container = document.getElementById("cart-container");
  function DisplayProduct(data) {
    let total=document.getElementById("cart-total")
